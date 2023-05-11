@@ -1,6 +1,10 @@
 .person {
     width: 100%x;
-    height: 250px;  
+    height: 210px;  
     border: 2px solid;
-    border-top-color: red;
+    border-color: red;
+    border-spacing: 5px 10px;
+    padding: 20px;
+    margin: 20px 10px;
 }
+
