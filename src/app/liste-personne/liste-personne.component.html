@@ -1,0 +1,9 @@
+<p>Voici la liste des gens qui composent l'annuaire :</p>
+<p>Actuellement il y a <strong>{{personnesAAfficher.length}}</strong> personnes qui sont en base de données.</p>
+
+<!-- La directive *ngFor provoquera la répétition du div pour chaque élément de personnesAAfficher-->
+<div *ngFor="let p of personnesAAfficher">
+
+    <!-- La variable p contient l'objet Personne-->
+    <app-detail-personne [pers]="p" (suppressionPersonne)="onSuppressionPersonne()"></app-detail-personne>
+</div>

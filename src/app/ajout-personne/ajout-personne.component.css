@@ -1,0 +1,71 @@
+p {
+    color: rgb(44, 159, 236);
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+fieldset {
+    background-color: darkkhaki;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width:360px; 
+    color:blue; 
+    text-align: center;
+}
+
+legend {
+    font-size: larger;
+    font-family: cursive;
+    color: rgba(23, 6, 83, 0.781);
+    background-color: cadetblue;
+}
+
+input, textarea {
+    outline: none;
+    border-radius: 8px;
+    height: 25px;
+    border: 1px solid rgb(92, 2, 2);
+    margin-top: 5px;
+}
+
+label {
+    display: block;
+}
+/* 
+.form-group.error input, .form-group.error textarea {
+    border: 1px solid red;
+}
+
+.form-group.error label {
+    color: red;
+} */
+
+/* .form-group.error::after {
+    content: 'Ce champs est invalide !! ATTENTION !!';
+    display: block;
+    color: red;
+    padding: 5px 0;
+    font-size: .9rem;
+} */
+
+button {
+    margin: 10px 0;
+    background: rgba(7, 219, 42, 0.89);
+    border: 1px solid rgb(248, 4, 4);
+    border-radius: 4px;
+    height: 30px;
+}
+
+.alert{
+    margin: 0;
+    padding: 0;
+    color: red;
+    font-size: x-small;
+    text-align: center;
+}
+
+.tel:invalid {
+    border: 0px;
+    color: orange;
+    
+}

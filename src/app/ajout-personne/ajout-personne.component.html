@@ -1,0 +1,54 @@
+<p><strong>Nouveau !!</strong> Inscrivez vous sans plus attendre.</p>
+<p>Veuillez saisir, vos coordonnées personnelles.</p>
+
+
+<form  #f="ngForm" (ngSubmit)="onFormSubmit(f)">
+    <fieldset>
+        <legend> Remplir le formulaire </legend>
+
+        <div class="form-group">
+            <label for="last_name">Nom *</label>
+            <input id="last_name" type="text" placeholder="Nom" name="last_name"  minlength="3" maxlength="20"  ngModel #champNom="ngModel">
+        </div>
+        <div *ngIf="champNom.invalid && champNom.touched && champNom.dirty" class="alert">Le champ nom est invalide !
+            <div *ngIf="champNom.errors?.['required']">Le nom est obligatoire.</div>
+            <div *ngIf="champNom.errors?.['maxlength']">Le nom doit comporter au plus 50 caractères</div>
+            <div *ngIf="champNom.errors?.['minlength']">Le nom doit comporter au moins 3 caractères</div>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="first_name">Prénom *</label>
+            <input id="first_name" type="text" placeholder="Prénom" name="first_name" minlength="3" maxlength="20"   ngModel #champPrenom="ngModel">
+        </div>
+        <div *ngIf="champPrenom.invalid && champPrenom.touched && champPrenom.dirty" class="alert">Le champ prénom est invalide !
+            <div *ngIf="champPrenom.errors?.['required']">Le prénom est obligatoire.</div>
+            <div *ngIf="champPrenom.errors?.['maxlength']">Le prénom doit comporter au plus 15 caractères</div>
+            <div *ngIf="champPrenom.errors?.['minlength']">Le prénom doit comporter au moins 3 caractères</div>
+        </div>
+        <br>
+        
+        <div class="form-group">
+            <label for="telephone">Téléphone *</label>
+            <input type="text" name="telephone" ngModel placeholder="0x xx xx xx xx"
+            pattern="^0[1-9]([\s\-]?\d{2}){4}$" class="tel" #champTelephone="ngModel">
+            <div *ngIf="champTelephone.invalid && champTelephone.dirty" class="alert">
+            Téléphone 0x xx xx xx xx
+            </div>  
+        </div>
+        <br>
+
+        <!-- <div class="form-group">
+            <label for="email">Email *</label>
+            <input id="email" type="email" placeholder="Email" name="email" required ngModel>
+        </div>
+        <br> -->
+
+        <div>
+            <!-- -->
+            <!--<button type="submit" *ngIf="f.valid">Validez</button> -->
+            <button type="submit" [style.visibility]="f.valid ? 'visible' : 'hidden'">Validez</button>         
+        </div>
+
+    </fieldset>
+</form>
