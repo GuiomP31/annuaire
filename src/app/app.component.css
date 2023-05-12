@@ -11,11 +11,10 @@ div {
     animation:spin 4s linear infinite;
 }
 
- @keyframes spin {
+@keyframes spin {
     100% { -webkit-transform: rotateY(360deg); transform:rotateY(360deg); }
- }
-     
- h1 {
+}
+h1 {
     vertical-align: middle;
     display: inline-block;
     font-size: x-large;
