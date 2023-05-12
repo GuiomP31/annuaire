@@ -22,3 +22,12 @@ h1 {
     color: blueviolet;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #1885f2;
+    color: #fff;
+    font-family: serif;
+    font-size: 28px;
+}
