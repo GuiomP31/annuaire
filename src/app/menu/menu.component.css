@@ -2,4 +2,12 @@
     color:crimson;
 }
 
+nav {
+height : 83px;
+border: solid black;
+border-radius: 15px;
+}
 
+a {
+    font-size: 18px;
+}
