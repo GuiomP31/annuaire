@@ -5,9 +5,10 @@
 nav {
 height : 83px;
 border: solid black;
-border-radius: 15px;
+border-radius: 10px;
+
 }
 
 a {
-    font-size: 18px;
+    font-size: 20px;
 }

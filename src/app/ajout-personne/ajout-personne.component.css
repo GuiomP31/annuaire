@@ -4,6 +4,10 @@ p {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.champs {
+    text-decoration:underline overline red 3px;
+}
+
 fieldset {
     background-color: darkkhaki;
     box-sizing: border-box;
