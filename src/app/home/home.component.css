@@ -5,8 +5,17 @@ p {
 }
 
 
-#img {
+.img {
+   
+    border: 5px solid bisque;
     display: block;
-    width: 30%;
-    margin: auto;
+    margin: 0 auto;
+    width: 900px;
+    height: 570px;
+    transition: transform .1s;
 }
+.img:hover{
+    -ms-transform: scale(1.2); 
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2);
+    }
